@@ -1,0 +1,1129 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>Simol Store</title> 
+  <link rel="icon" type="image/png" href="20221206_005458.jpg"> 
+ <link rel="stylesheet" href="splide.min.css">
+ <script src="splide.min.js"></script>
+  <style type="text/css">
+
+.splide__arrow{
+  height:.1px;width:.1px;background-color: #1C2939
+}
+.splide__pagination__page{
+  height: 2px;
+  width:50px;
+  background-color: #1C2939;
+  border-radius: 5px
+}
+.splide__track{
+  height: 110px
+}
+.splide__pagination li{
+  width: 50px;height: 0px
+}
+
+
+  *{
+  box-sizing:  border-box;
+  font-size: sans-serif;
+width: 100%;
+  }
+  html, body{
+  overflow-x:hidden;
+  height:100%;
+  
+  }
+  body{
+  font-family:arial, sans-serif;
+  background:white;
+  padding:0px;
+  margin:0px;
+  }
+  .header{
+  background :#1C2939;
+  width:100%;
+  height:45px;
+  position :fixed;
+  z-index:10;
+  box-shadow: 0 0 0 1.5px #2E3444
+  }
+  
+  
+  
+
+
+ 
+  
+  
+
+
+
+.headname{
+  color: white;
+  margin-top: -15px;
+  font-size: 60%;
+  margin-left: 20%;
+  font-family: sans-serif;
+  font-weight: 800;
+  display: block
+}
+
+input#openSidebarMenu{
+  width: 0px
+}
+
+
+
+.mobile-bottom-nav{
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:1000;
+	//give nav it's own compsite layer
+	will-change:transform;
+	transform: translateZ(0);
+	
+	display:flex;	
+	
+	height:50px;
+	box-shadow: 0 -2px 5px -2px #333;
+	background-color:#16202A;
+	
+}
+
+
+
+.showLeft{
+                    background-color: #1C2939 !important;
+                    border:0px solid #FC0191 !important;
+                    text-shadow: none !important;
+                    color:#fff !important;
+                    padding:0%;
+                    
+                }
+
+                .icons li {
+                    background: none repeat scroll 0 0 #fff;
+                    height: 7px;
+                    width: 6px;
+                    line-height: 0px;
+                    list-style: none outside none;
+                    margin-right: 15px;
+                    margin-top: 10px;
+                    vertical-align: top;
+                    border-radius:50%;
+                  pointer-events: none;
+                  margin: 0 auto
+                }
+
+                .btn-left {
+                    left: 0.4em;
+                }
+
+                .btn-right {
+                    right: 0.4em;
+                }
+
+                .btn-left, .btn-right {
+                    position: absolute;
+                    top:0.24em;
+                    
+                }
+
+                .dropbtn {
+                    background-color: red;
+                    position: fixed;
+                    color: white;
+                    font-size: 0px;
+                    border: 0px;
+                    width: 35px;
+                    height: 15px;
+                    margin-top: 5px;
+                    margin: 15px
+                 
+                }
+
+
+                .dropdown {
+                    position: absolute;
+                    display: inline-block;
+                    right: 0.4em;
+                }
+
+                .dropdown-content {
+                    display: none;
+                    position: relative;
+                    margin-top: 60%;
+                    background-color: #fff;
+                    min-width: 100px;
+                    overflow: auto;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 5;
+                    width: 70%;
+                    height: 70%;
+                    margin-left: 40%;
+                    margin-top: 16%
+                }
+
+                .dropdown-content a {
+                    color: #fff;
+                    padding: 12px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+
+                .show {display:block;}
+.panel b{
+  margin-left: 5px;
+  margin-top: -25px;
+  background-color: white;
+  width: 80%;
+  color: black;
+  font-size: 13px
+}
+
+.dropdown-content{
+  box-shadow: 0px 0px 7px black;
+  width: 70%;
+  
+}
+
+.mobile-bottom-nav{
+  box-shadow:  0px 0px 4px black;
+  
+}
+
+
+
+
+
+html,
+     body {
+       position: relative;
+       height: 100%;
+               }
+          body {
+       
+       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+       font-size: 14px;
+       
+       margin: 0;
+       padding: 0;
+       background-color: #04131A
+       
+     }
+     
+     
+    
+
+  
+    #sidebarMenu{
+  left:0;
+  top:0px;
+  width:250px;
+  margin-top:45px;
+  background : #243141;
+  transform: translateX(-250px);
+  transition: transform 250ms ease-in-out;
+ position :fixed;
+ height:95%;
+  }
+  
+  
+  
+
+
+  #openSidebarMenu:checked ~ #sidebarMenu
+  {transform: translateX(0px)}
+  
+
+  .sidebarIconToggle{
+  width :45px;
+  height: 25px;
+  position: absolute;
+  z-index: 2;
+  top: 2px;
+  left: 8px;
+  }
+  .sidebarIconToggle span{
+  display: block;
+  background-color: white;
+  width:25px;
+  height: 3px;
+  margin: 4px;
+  background: white;
+  margin-left: 5px
+  }
+
+label.sidebarIconToggle{
+  margin-top: 10px;
+  margin-left: -7px;
+  
+}
+ 
+  
+  .pry{
+  color: #959595;
+  font-size: 80%;
+  margin-left: 24%;
+  font-family: sans-serif;
+  margin-top: -15%;
+  transition: 10ms
+  }
+  
+  
+  
+  
+ 
+
+
+
+
+@keyframes shakib {
+ 0%{
+   transform: translateX(80px);
+  
+ }
+ 50%{
+   transform: rotateY(360deg)
+ }
+ 
+}
+
+
+#div{
+  margin-left: 3px
+}
+.asas :hover{
+  background: #0577E9
+}
+
+
+#more {display: none;}
+
+#more1 {display: none;}
+
+
+.gtgt :hover{
+  background: #0577E9;
+}
+
+
+
+.gtgt1 :hover{
+  background: #0577E9;
+  
+}
+
+
+                .dropdown a:hover {background-color: #04131A;
+                }
+
+
+ </style> 
+ </head> 
+ <body> 
+  
+  <div class="header"> 
+  <div class="dropdown"> <!-- three dots --> 
+  <ul class="dropbtn icons btn-right showLeft" onclick="showDropdown()"> 
+  <li style="width: 4px;
+  height: 4px;margin-top: 0px"></li> 
+  <li style="width: 4px;
+  height: 4px;margin-top: 3px"></li> 
+  <li style="width: 4px;
+  height: 4px;margin-top: 3px"></li> 
+  </ul> <!-- menu --> 
+  
+   
+       <div id="myDropdown" class="dropdown-content" style="background-color: #243141;border-radius: 5px;margin-top: 50px;height: 280px;width: 60%">  
+    
+    
+
+
+
+
+
+
+
+
+<div style="width: 90%;margin: 0 auto;height: 35px;background-color: #0577E9;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px">
+  <a href="#" style="width: 100%;height: 100%;border-radius: 10px;cursor: none;">
+    
+    
+    
+
+      <img src="20220721_110103.png" style="width: 19px;margin-top: -10px;margin-left: 15px">
+      			      <p style="text-align: center;margin-top: -24px;color: #ddd;font-family: sans-serif;font-weight: 500;">
+			        About 
+			      </p>
+       
+    
+  </a>
+</div>
+<div style="width: 90%;margin: 0 auto;height: 35px;background-color: #0577E9;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px">
+  <a href="#" style="width: 100%;height: 100%;border-radius: 10px;cursor: none;">
+    
+    
+    
+
+      <img src="20220721_110103.png" style="width: 19px;margin-top: -10px;margin-left: 15px">
+      			      <p style="text-align: center;margin-top: -24px;color: #ddd;font-family: sans-serif;font-weight: 500;">
+			        About 
+			      </p>
+       
+    
+  </a>
+</div><div style="width: 90%;margin: 0 auto;height: 35px;background-color: #0577E9;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px">
+  <a href="#" style="width: 100%;height: 100%;border-radius: 10px;cursor: none;">
+    
+    
+    
+
+      <img src="20220721_110103.png" style="width: 19px;margin-top: -10px;margin-left: 15px">
+      			      <p style="text-align: center;margin-top: -24px;color: #ddd;font-family: sans-serif;font-weight: 500;">
+			        About 
+			      </p>
+       
+    
+  </a>
+</div><div style="width: 90%;margin: 0 auto;height: 35px;background-color: #0577E9;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px">
+  <a href="#" style="width: 100%;height: 100%;border-radius: 10px;cursor: none;">
+    
+    
+    
+
+      <img src="20220721_110103.png" style="width: 19px;margin-top: -10px;margin-left: 15px">
+      			      <p style="text-align: center;margin-top: -24px;color: #ddd;font-family: sans-serif;font-weight: 500;">
+			        About 
+			      </p>
+       
+    
+  </a>
+</div><div style="width: 90%;margin: 0 auto;height: 35px;background-color: #0577E9;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px">
+  <a href="#" style="width: 100%;height: 100%;border-radius: 10px;cursor: none;">
+    
+    
+    
+
+      <img src="20220721_110103.png" style="width: 19px;margin-top: -10px;margin-left: 15px">
+      			      <p style="text-align: center;margin-top: -24px;color: #ddd;font-family: sans-serif;font-weight: 500;">
+			        About 
+			      </p>
+       
+    
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+  </div> 
+  </div> 
+ 
+   
+   
+ 
+  <input type="checkbox" id="openSidebarMenu"> <label id="div" for="openSidebarMenu" class="sidebarIconToggle"> <span class="div1" style="width: 20px;height: 2.5px;transition: .6s;border-radius: 20px"></span> <span class="div2" style="width: 20px;height: 2.3px;border-radius: 20px"></span> <span class="div3" style="height: 2.5px;width: 20px;border-radius: 10px"></span> </label> 
+  
+  
+  
+  <div id="sidebarMenu"> 
+ 
+ 
+  <div class="gtgt" style="width: 80%;margin: 0 auto;height: 40px;background-color: #1C2939;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px">
+  <a href="#" style="cursor: none;text-decoration: none">
+    <div style="height: 40px;border-radius: 10px;box-shadow: 0 0 .1px 2px #2E3444;">
+      <img src="20220721_110103.png" style="width: 20px;margin: 9px;margin-left: 20px">
+      			      <p style="text-align: center;margin-top: -31px;color: #ddd;font-family: sans-serif;font-weight: 500;">
+			        About 
+			      </p>
+        
+      </div>
+  </a>
+  </div>
+  
+  
+     <div class="gtgt" style="width: 80%;margin: 0 auto;height: 40px;background-color: #1C2939;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px">
+  <a href="mailto:sbgroup.feedback.bd@gmail.com?sibject=Feedback&amp;body=message" style="cursor: none;text-decoration: none;">
+    <div style="height: 40px;border-radius: 10px;box-shadow: 0 0 .1px 2px #2E3444;">
+      <img src="20220722_111311.png" style="width: 20px;margin: 9px;margin-left: 20px">
+      			      <p style="text-align: center;margin-top: -31px;color: #ddd;font-family: sans-serif;font-weight: 500;">
+			        Send Feedback
+			      </p>
+        
+      </div>
+  </a>
+  </div>
+
+     <div class="gtgt" style="width: 80%;margin: 0 auto;height: 40px;background-color: #1C2939;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px">
+  <a href="#" style="cursor: none;text-decoration: none">
+    <div style="height: 40px;border-radius: 10px;box-shadow: 0 0 .1px 2px #2E3444;">
+      <img src="20220722_111130.png" style="width: 20px;margin: 9px;margin-left: 20px">
+      			      <p style="text-align: center;margin-top: -31px;color: #ddd;font-family: sans-serif;font-weight: 500;">
+			        Share App
+			      </p>
+        
+      </div>
+  </a>
+  </div>
+  
+  
+  <div style="width: 80%;margin: 0 auto;text-align: center;background-color: #1C2939;border-radius: 10px;box-shadow: 0 0 .1px 2px #2E3444;">
+<p>
+  			      <img src="20221208_160425.png" style="width: 20px;margin: 1px;margin-left: -69%;margin-top: 14px">
+			      <p style="text-align: center;margin-top: -40px;color: #ccc;font-family: sans-serif;font-weight: 500;margin-left: -0px">
+			        Another App</p>
+  <span id="dots"></span><span id="more">
+      
+			      <img src="20221108_184539.jpg" style="width: 25px;margin: 9px;margin-left: -125px;border-radius: 5px;box-shadow: 0 0 .1px 2px #2E3444;">
+			      		 <a href="" class="gtgt" style="border-radius: 10px;cursor: none;width: 50px;border-radius: 5px;text-decoration: none">
+			      <p style="text-align: center;margin-top: -35px;color: #fff;font-family: sans-serif;font-weight: 500;margin-left: 60px;width: 90px;background-color: #1A74E4;border-radius: 5px;display: block">
+			        Install
+			        </p>
+                
+			    	 </a>
+			    	 
+			    	 
+			    	 
+
+			  			      <img src="20221108_184539.jpg" style="width: 25px;margin: 9px;margin-left: -125px;border-radius: 5px;box-shadow: 0 0 .1px 2px #2E3444;">
+			      		 <a href="" style="text-decoration: none;border-radius: 10px;cursor: none;width: 50px;border-radius: 5px;display: block">
+			      <p style="text-align: center;margin-top: -35px;color: #fff;font-family: sans-serif;font-weight: 500;margin-left: 60px;width: 90px;background-color: #1A74E4;border-radius: 5px;display: block;">
+			        Install
+			        </p>
+                
+			    	 </a>
+			    	 
+			    	   	 
+  </span></p>
+
+<button onclick="myFunction()" id="myBtn" style="border-radius: 10px;border: none;display: block;background: none;height: 0px">
+			        <img src="20221208_145749.png" style="width: 12px;margin: 0%;margin-left: 80%;transform: translateY(-31px)">
+</button> </div>
+
+
+
+
+<div style="width: 80%;margin: 0 auto;text-align: center;background-color: #1C2939;border-radius: 10px;box-shadow: 0 0 .1px 2px #2E3444;">
+<p>
+  			      <img src="20221208_163117.png" style="width: 20px;margin: 1px;margin-left: -69%;margin-top: 14px">
+			      <p style="text-align: center;margin-top: -40px;color: #ccc;font-family: sans-serif;font-weight: 500;margin-left: -0px">
+			        Connected Us</p>
+  <span id="dots1"></span><span id="more1">
+      
+			      <img src="youtube (2).png" style="width: 25px;margin: 9px;margin-left: -125px;border-radius: 5px;">
+			      		 <a href="" style="text-decoration: none;border-radius: 10px;cursor: none;width: 50px;border-radius: 5px;display: block">
+			      <p style="text-align: center;margin-top: -35px;color: #fff;font-family: sans-serif;font-weight: 500;margin-left: 60px;width: 90px;background-color: #FB3046;border-radius: 5px;display: block;">
+			        Youtube
+			        </p>
+                
+			    	 </a>
+			    	 
+			    	 
+			    	 
+
+			  			      <img src="facebook (3).png" style="width: 25px;margin: 9px;margin-left: -125px;border-radius: 5px;">
+			      		 <a href="" style="border-radius: 10px;cursor: none;width: 50px;border-radius: 5px;display: block;text-decoration: none">
+			      <p style="text-align: center;margin-top: -35px;color: #fff;font-family: sans-serif;font-weight: 500;margin-left: 60px;width: 90px;background-color: #0577E9;border-radius: 5px;display: block;">
+			        Facebook
+			        </p>
+                
+			    	 </a>
+			    	 
+			    	   	 
+  </span></p>
+
+<button onclick="myFunction1()" id="myBtn1" style="border-radius: 10px;height: 0px;border: none;display: block;background: none">
+			        <img src="20221208_145749.png" style="width: 12px;margin: 0%;margin-left: 80%;transform: translateY(-31px)">
+</button> </div>
+
+
+  
+  
+
+
+
+  <br>
+  <br>
+  <br>
+  <div date-role="footer">
+  <p class="pry" style="">© Privacy Policy 2022</p>
+  </div> 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </div>
+  <div>
+
+
+
+ <p class="headname" style="font-family: sans-serif;color: ghostwhite;margin-left: 15%;font-weight: 500">
+   <img src="20221205_134512.jpg" style="width: 120px">
+<img src="shopping-cart.png" class="bsbs" style="width: 30px;animation-name: shakib;animation-duration: 3s">
+    </p>
+  </div></div>
+  
+  
+  <nav class="mobile-bottom-nav" style="margin-left: 0px;">
+    
+     
+  <div style="width: 20%;margin: 0 auto">
+    <a href="index.html" class="asas" style="width: 25%;text-align: center;justify-align: center;background-color: #1A1D2B;color: #1A1D2B"> <img src="20221208_000309.png" style="width: 23px;display: block;margin: 0 auto;transform: translateY(3px);cursor: none;background-color: #0577E9"> </a><br> <b style="text-align: center;color: #fff;font-size: 10px;font-weight: 400;font-family:sans-serif;display:block;margin: 0 auto;transform: translateY(-9px)"> Home</b> 
+</div>
+  
+
+  <div style="width: 20%;margin: 0 auto">
+    <a href="minute.html" class="asas" style="width: 25%;text-align: center;justify-align: center;background-color: #1A1D2B;color: #1A1D2B;cursor: none"> <img src="20221205_172540.png" style="width: 23px;display: block;margin: 0 auto;transform: translateY(3px);border-radius: 50%"> </a><br> <b style="text-align: center;color: #fff;font-size: 10px;font-weight: 400;font-family:sans-serif;display:block;margin: 0 auto;transform: translateY(-9px)"> Minutes</b> 
+</div>
+    <div style="width: 20%;margin: 0 auto">
+    <a href="video.html" class="asas" style="width: 25%;text-align: center;justify-align: center;background-color: #1A1D2B;color: #1A1D2B;cursor: none"> <img src="20221207_103454.png" style="width: 40px;display: block;margin: 0 auto;transform: translateY(-20px);border-radius: 50%;box-shadow: 0 0 1px 0.7px #fff;"> </a><br> <b style="text-align: center;color: #fff;font-size: 10px;font-weight: 400;font-family:sans-serif;display:block;margin: 0 auto;transform: translateY(-26px)"> Video</b> 
+</div>
+    <div style="width: 20%;margin: 0 auto">
+    <a href="combo.html" class="asas" style="width: 25%;text-align: center;justify-align: center;background-color: #1A1D2B;color: #1A1D2B;cursor: none"> <img src="20221205_172637.png" style="width: 23px;display: block;margin: 0 auto;transform: translateY(3px);border-radius: 50%"> </a><br> <b style="text-align: center;color: #fff;font-size: 10px;font-weight: 400;font-family:sans-serif;display:block;margin: 0 auto;transform: translateY(-9px)"> Combo</b> 
+</div>
+    <div style="width: 20%;margin: 0 auto">
+    <a href="internet.html" class="asas" style="width: 25%;text-align: center;justify-align: center;background-color: #1A1D2B;color: #1A1D2B;cursor: none"> <img src="20221205_172508.png" style="width: 23px;display: block;margin: 0 auto;transform: translateY(3px);border-radius: 50%"> </a><br> <b style="text-align: center;color: #fff;font-size: 10px;font-weight: 400;font-family:sans-serif;display:block;margin: 0 auto;transform: translateY(-9px)"> Internet</b> 
+</div>
+  
+  
+  </nav> 
+  
+<br><br><br><br>
+<div style="width: 90%;margin: 0 auto;display: flex;">
+  <form action="https://www.google.com/search?q=" target="_blank" method="GET" style="display: flex;height: 43px;border: none;background-color: #1C2939;border-radius:50px;box-shadow: 0 0 1px 1.5px #2E3444;">
+    <img src="search.png" style="width: 20px;border-radius: 50%;height: 20px;margin:12px;">
+    <div style="background-color: #757575;width: 3px;height: 50%;margin-top: 11px">
+      
+    </div>
+    <input type="search" name="search" placeholder="Search or enter URL" style="height: 38px;margin: 2.5px;border-radius: 5px;font-family: sans-serif;font-weight: 400;border: none;background-color: #1C2939;font-size: 16px;color: #BFC2C7;margin-left: -0px;outline: none;padding:10px;" required>
+    <input type="submit" value="🔍" style="width: 30%;height: 43px;margin: 0px;border-radius:0 50px 50px 0;border: none;background-color: #182230;color: #bbb;font-size: 15px;font-family: sans-serif;font-weight: 500;box-shadow: 0 0 1px 1.5px #2E3444;">
+  </form>
+</div>
+  <br>
+<div style="background-color: #1C2939;height: 10px;width: 90%;margin: 0 auto;border-radius: 50px">
+  
+</div>
+<br>
+
+
+<div style="display: flex;width: 90%;margin: 0 auto">
+
+
+
+
+<div>
+     <div class="gtgt1" style="margin: 0 auto;background-color: #1C2939;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px;height: 70px;width: 70px">
+  <a href="#" style="cursor: none;text-decoration: none">
+    <div style="height: 70px;border-radius: 10px;text-align: center;color: #fff;font-size: 11px;font-family: sans-serif;font-weight: 400;box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);">
+      
+      <img src="20221205_200701.png" style="width: 45%;margin-top: 8px;">
+      <p style="margin-top: 4px;font-size: 10px">Internet</p>
+        
+   </div>
+  </a>
+  </div>
+  </div>
+  
+ 
+
+<div>
+     <div class="gtgt1" style="margin: 0 auto;background-color: #1C2939;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px;height: 70px;width: 70px">
+  <a href="#" style="cursor: none;text-decoration: none">
+    <div style="height: 70px;border-radius: 10px;text-align: center;color: #fff;font-size: 11px;font-family: sans-serif;font-weight: 400;box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);">
+      
+      <img src="20221205_213631.png" style="width: 45%;margin-top: 8px">
+      <p style="margin-top: 4px;font-size: 10px">Minutes</p>
+        
+   </div>
+  </a>
+  </div>
+  </div>
+ 
+  
+
+
+
+
+<div>
+     <div class="gtgt1" style="margin: 0 auto;background-color: #1C2939;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px;height: 70px;width: 70px">
+  <a href="#" style="cursor: none;text-decoration: none">
+    <div style="height: 70px;border-radius: 10px;text-align: center;color: #fff;font-size: 11px;font-family: sans-serif;font-weight: 400;box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);">
+      
+      <img src="20221205_205043.png" style="width: 45%;margin-top: 8px">
+      <p style="margin-top: 4px;font-size: 10px">Combo</p>
+        
+   </div>
+  </a>
+  </div>
+  </div>
+ 
+
+
+
+
+<div>
+     <div class="gtgt1" style="margin: 0 auto;background-color: #1C2939;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px;height: 70px;width: 70px">
+  <a href="#" style="cursor: none;text-decoration: none">
+    <div style="height: 70px;border-radius: 10px;text-align: center;color: #fff;font-size: 11px;font-family: sans-serif;font-weight: 400;box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);">
+      
+      <img src="20221206_170925.png" style="width: 45%;margin-top: 8px">
+      <p style="margin-top: 4px;font-size: 10px">Shop</p>
+        
+   </div>
+  </a>
+  </div>
+  </div>
+  
+
+  </div>
+  
+  
+    <div style="display: flex;width: 90%;margin: 0 auto">
+
+
+
+
+<div>
+     <div class="gtgt1" style="margin: 0 auto;background-color: #1C2939;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px;height: 70px;width: 70px">
+  <a href="#" style="cursor: none;text-decoration: none">
+    <div style="height: 70px;border-radius: 10px;text-align: center;color: #fff;font-size: 11px;font-family: sans-serif;font-weight: 400;box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);">
+      
+      <img src="20221205_205836.png" style="width: 45%;margin-top: 8px">
+      <p style="margin-top: 4px;font-size: 10px">Watch</p>
+        
+   </div>
+  </a>
+  </div>
+  </div>
+  
+  
+
+
+
+
+<div>
+     <div class="gtgt1" style="margin: 0 auto;background-color: #1C2939;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px;height: 70px;width: 70px">
+  <a href="#" style="cursor: none;text-decoration: none">
+    <div style="height: 70px;border-radius: 10px;text-align: center;color: #fff;font-size: 11px;font-family: sans-serif;font-weight: 400;box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);">
+      
+      <img src="20221205_212920.png" style="width: 45%;margin-top: 8px">
+      <p style="margin-top: 4px;font-size: 10px">Sports</p>
+        
+   </div>
+  </a>
+  </div>
+  </div>
+ 
+
+
+
+
+<div>
+     <div class="gtgt1" style="margin: 0 auto;background-color: #1C2939;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px;height: 70px;width: 70px">
+  <a href="#" style="cursor: none;text-decoration: none">
+    <div style="height: 70px;border-radius: 10px;text-align: center;color: #fff;font-size: 11px;font-family: sans-serif;font-weight: 400;box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);">
+      
+      <img src="20221205_212949.png" style="width: 45%;margin-top: 8px">
+      <p style="margin-top: 4px;font-size: 10px">News</p>
+        
+   </div>
+  </a>
+  </div>
+  </div>
+  
+
+
+
+
+<div>
+     <div class="gtgt1" style="margin: 0 auto;background-color: #1C2939;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px;height: 70px;width: 70px">
+  <a href="#" style="cursor: none;text-decoration: none">
+    <div style="height: 70px;border-radius: 10px;text-align: center;color: #fff;font-size: 11px;font-family: sans-serif;font-weight: 400;box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);">
+      
+      <img src="20221206_170800.png" style="width: 45%;margin-top: 8px">
+      <p style="margin-top: 4px;font-size: 10px">Learn</p>
+        
+   </div>
+  </a>
+  </div>
+  </div>
+ 
+  
+  </div>
+  
+  
+  <div style="display: flex;width: 90%;margin: 0 auto">
+
+
+
+
+<div>
+     <div class="gtgt1" style="margin: 0 auto;background-color: #1C2939;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px;height: 70px;width: 70px">
+  <a href="#" style="cursor: none;text-decoration: none">
+    <div style="height: 70px;border-radius: 10px;text-align: center;color: #fff;font-size: 11px;font-family: sans-serif;font-weight: 400;box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);">
+      
+      <img src="20221206_171136.png" style="width: 45%;margin-top: 8px">
+      <p style="margin-top: 4px;font-size: 10px">Games</p>
+        
+   </div>
+  </a>
+  </div>
+  </div>
+  
+  
+
+
+
+
+<div>
+     <div class="gtgt1" style="margin: 0 auto;background-color: #1C2939;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px;height: 70px;width: 70px">
+  <a href="#" style="cursor: none;text-decoration: none">
+    <div style="height: 70px;border-radius: 10px;text-align: center;color: #fff;font-size: 11px;font-family: sans-serif;font-weight: 400;box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);">
+      
+      <img src="20221108_184539.jpg" style="width: 45%;margin-top: 8px;border-radius: 50%">
+      <p style="margin-top: 4px;font-size: 10px">Sb Sports </p>
+        
+   </div>
+  </a>
+  </div>
+  </div>
+ 
+
+
+
+
+<div>
+     <div class="gtgt1" style="margin: 0 auto;background-color: #1C2939;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px;height: 70px;width: 70px">
+  <a href="#" style="cursor: none;text-decoration: none">
+    <div style="height: 70px;border-radius: 10px;text-align: center;color: #fff;font-size: 11px;font-family: sans-serif;font-weight: 400;box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);">
+      
+      <img src="20221125_005237.jpg" style="width: 45%;margin-top: 8px;border-radius: 50%">
+      <p style="margin-top: 4px;font-size: 10px">Nt Sports</p>
+        
+   </div>
+  </a>
+  </div>
+  </div>
+  
+  
+
+
+
+
+<div>
+     <div class="gtgt1" style="margin: 0 auto;background-color: #1C2939;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;margin-top: 10px;height: 70px;width: 70px">
+  <a href="#" style="cursor: none;text-decoration: none">
+    <div style="height: 70px;border-radius: 10px;text-align: center;color: #fff;font-size: 11px;font-family: sans-serif;font-weight: 400;box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);">
+      
+      <img src="20221205_205158.png" style="width: 45%;margin-top: 8px;border-radius: 50%">
+      <p style="margin-top: 4px;font-size: 10px">More</p>
+        
+   </div>
+  </a>
+  </div>
+  </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <br>
+  
+  <div style="background-color: #1C2939;height: 10px;width: 90%;margin: 0 auto;border-radius: 50px">
+  
+</div>
+   
+  <br>
+  <div class="splide" role="group" aria-label="Splide Basic HTML Example"><b style="color: #BFC2C7;margin-left: 6%;font-family: sans-serif;font-weight: 500;">🔥 Offer For You 🔥</b><br><br>
+  <div class="splide__track">
+		<ul class="splide__list">
+		  
+			<li class="splide__slide">
+			 
+			<div style="background-color: #1C2939;width: 90%;margin: 0 auto;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;height: 95px"><br>
+  <p style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 900;margin-left: 20px;cursor: none;margin-top: -8px">🌐 <b style="color: #1C2939;">...</b>  3 GP + 512 MB Bonus
+    <b><img src="banglalink.png" style="width: 20px;margin-left: 50px;border-radius: 2px;box-shadow: 0 0 1px 1.5px #2E3444"></b></p>
+ <p style="color: #fff;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -8px;margin-left: 65px">72 Hours</p>
+ <p style="color: cyan;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -4px;margin-left: 65px">৳ 75<b style="margin-left: 100px">
+   <a href="" style="color: #0577E9;background-color: #0577E9;border-radius: 5px;">
+     <b style="color: #fff;margin: 30px;">
+       BUY
+     </b>
+   </a>
+ </b></p>
+</div>
+      </li>
+      
+      <li class="splide__slide">
+			 
+			<div style="background-color: #1C2939;width: 90%;margin: 0 auto;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;height: 95px"><br>
+  <p style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 900;margin-left: 20px;cursor: none;margin-top: -8px">🌐 <b style="color: #1C2939;">...</b>  3 GP + 512 MB Bonus
+    <b><img src="grameenphone.png" style="width: 20px;margin-left: 50px;border-radius: 2px;box-shadow: 0 0 1px 1.5px #2E3444"></b></p>
+ <p style="color: #fff;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -8px;margin-left: 65px">72 Hours</p>
+ <p style="color: cyan;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -4px;margin-left: 65px">৳ 75<b style="margin-left: 100px">
+   <a href="" style="color: #0577E9;background-color: #0577E9;border-radius: 5px">
+     <b style="color: #fff;margin: 30px">
+       BUY
+     </b>
+   </a>
+ </b></p>
+</div>
+      </li><li class="splide__slide">
+			 
+			<div style="background-color: #1C2939;width: 90%;margin: 0 auto;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;height: 95px"><br>
+  <p style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 900;margin-left: 20px;cursor: none;margin-top: -8px">🌐 <b style="color: #1C2939;">...</b>  3 GP + 512 MB Bonus
+    <b><img src="robi.png" style="width: 20px;margin-left: 50px;border-radius: 2px;box-shadow: 0 0 1px 1.5px #2E3444"></b></p>
+ <p style="color: #fff;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -8px;margin-left: 65px">72 Hours</p>
+ <p style="color: cyan;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -4px;margin-left: 65px">৳ 75<b style="margin-left: 100px">
+   <a href="" style="color: #0577E9;background-color: #0577E9;border-radius: 5px">
+     <b style="color: #fff;margin: 30px">
+       BUY
+     </b>
+   </a>
+ </b></p>
+</div>
+      </li><li class="splide__slide">
+			 
+			<div style="background-color: #1C2939;width: 90%;margin: 0 auto;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;height: 95px"><br>
+  <p style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 900;margin-left: 20px;cursor: none;margin-top: -8px">🌐 <b style="color: #1C2939;">...</b>  3 GP + 512 MB Bonus
+    <b><img src="banglalink.png" style="width: 20px;margin-left: 50px;border-radius: 2px;box-shadow: 0 0 1px 1.5px #2E3444"></b></p>
+ <p style="color: #fff;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -8px;margin-left: 65px">72 Hours</p>
+ <p style="color: cyan;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -4px;margin-left: 65px">৳ 75<b style="margin-left: 100px">
+   <a href="" style="color: #0577E9;background-color: #0577E9;border-radius: 5px">
+     <b style="color: #fff;margin: 30px">
+       BUY
+     </b>
+   </a>
+ </b></p>
+</div>
+      </li><li class="splide__slide">
+			 
+			<div style="background-color: #1C2939;width: 90%;margin: 0 auto;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;height: 95px"><br>
+  <p style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 900;margin-left: 20px;cursor: none;margin-top: -8px">🌐 <b style="color: #1C2939;">...</b>  3 GP + 512 MB Bonus
+    <b><img src="grameenphone.png" style="width: 20px;margin-left: 50px;border-radius: 2px;box-shadow: 0 0 1px 1.5px #2E3444"></b></p>
+ <p style="color: #fff;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -8px;margin-left: 65px">72 Hours</p>
+ <p style="color: cyan;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -4px;margin-left: 65px">৳ 75<b style="margin-left: 100px">
+   <a href="" style="color: #0577E9;background-color: #0577E9;border-radius: 5px">
+     <b style="color: #fff;margin: 30px">
+       BUY
+     </b>
+   </a>
+ </b></p>
+</div>
+      </li><li class="splide__slide">
+			 
+			<div style="background-color: #1C2939;width: 90%;margin: 0 auto;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;height: 95px"><br>
+  <p style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 900;margin-left: 20px;cursor: none;margin-top: -8px">🌐 <b style="color: #1C2939;">...</b>  3 GP + 512 MB Bonus
+    <b><img src="robi.png" style="width: 20px;margin-left: 50px;border-radius: 2px;box-shadow: 0 0 1px 1.5px #2E3444"></b></p>
+ <p style="color: #fff;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -8px;margin-left: 65px">72 Hours</p>
+ <p style="color: cyan;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -4px;margin-left: 65px">৳ 75<b style="margin-left: 100px">
+   <a href="" style="color: #0577E9;background-color: #0577E9;border-radius: 5px">
+     <b style="color: #fff;margin: 30px">
+       BUY
+     </b>
+   </a>
+ </b></p>
+</div>
+      </li>
+      	<li class="splide__slide">
+			 
+			<div style="background-color: #1C2939;width: 90%;margin: 0 auto;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;height: 95px"><br>
+  <p style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 900;margin-left: 20px;cursor: none;margin-top: -8px">🌐 <b style="color: #1C2939;">...</b>  3 GP + 512 MB Bonus
+    <b><img src="banglalink.png" style="width: 20px;margin-left: 50px;border-radius: 2px;box-shadow: 0 0 1px 1.5px #2E3444"></b></p>
+ <p style="color: #fff;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -8px;margin-left: 65px">72 Hours</p>
+ <p style="color: cyan;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -4px;margin-left: 65px">৳ 75<b style="margin-left: 100px">
+   <a href="" style="color: #0577E9;background-color: #0577E9;border-radius: 5px;">
+     <b style="color: #fff;margin: 30px;">
+       BUY
+     </b>
+   </a>
+ </b></p>
+</div>
+      </li>
+      
+      <li class="splide__slide">
+			 
+			<div style="background-color: #1C2939;width: 90%;margin: 0 auto;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;height: 95px"><br>
+  <p style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 900;margin-left: 20px;cursor: none;margin-top: -8px">🌐 <b style="color: #1C2939;">...</b>  3 GP + 512 MB Bonus
+    <b><img src="grameenphone.png" style="width: 20px;margin-left: 50px;border-radius: 2px;box-shadow: 0 0 1px 1.5px #2E3444"></b></p>
+ <p style="color: #fff;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -8px;margin-left: 65px">72 Hours</p>
+ <p style="color: cyan;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -4px;margin-left: 65px">৳ 75<b style="margin-left: 100px">
+   <a href="" style="color: #0577E9;background-color: #0577E9;border-radius: 5px">
+     <b style="color: #fff;margin: 30px">
+       BUY
+     </b>
+   </a>
+ </b></p>
+</div>
+      </li><li class="splide__slide">
+			 
+			<div style="background-color: #1C2939;width: 90%;margin: 0 auto;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;height: 95px"><br>
+  <p style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 900;margin-left: 20px;cursor: none;margin-top: -8px">🌐 <b style="color: #1C2939;">...</b>  3 GP + 512 MB Bonus
+    <b><img src="robi.png" style="width: 20px;margin-left: 50px;border-radius: 2px;box-shadow: 0 0 1px 1.5px #2E3444"></b></p>
+ <p style="color: #fff;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -8px;margin-left: 65px">72 Hours</p>
+ <p style="color: cyan;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -4px;margin-left: 65px">৳ 75<b style="margin-left: 100px">
+   <a href="" style="color: #0577E9;background-color: #0577E9;border-radius: 5px">
+     <b style="color: #fff;margin: 30px">
+       BUY
+     </b>
+   </a>
+ </b></p>
+</div>
+      </li><li class="splide__slide">
+			 
+			<div style="background-color: #1C2939;width: 90%;margin: 0 auto;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;height: 95px"><br>
+  <p style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 900;margin-left: 20px;cursor: none;margin-top: -8px">🌐 <b style="color: #1C2939;">...</b>  3 GP + 512 MB Bonus
+    <b><img src="banglalink.png" style="width: 20px;margin-left: 50px;border-radius: 2px;box-shadow: 0 0 1px 1.5px #2E3444"></b></p>
+ <p style="color: #fff;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -8px;margin-left: 65px">72 Hours</p>
+ <p style="color: cyan;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -4px;margin-left: 65px">৳ 75<b style="margin-left: 100px">
+   <a href="" style="color: #0577E9;background-color: #0577E9;border-radius: 5px">
+     <b style="color: #fff;margin: 30px">
+       BUY
+     </b>
+   </a>
+ </b></p>
+</div>
+      </li><li class="splide__slide">
+			 
+			<div style="background-color: #1C2939;width: 90%;margin: 0 auto;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;height: 95px"><br>
+  <p style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 900;margin-left: 20px;cursor: none;margin-top: -8px">🌐 <b style="color: #1C2939;">...</b>  3 GP + 512 MB Bonus
+    <b><img src="grameenphone.png" style="width: 20px;margin-left: 50px;border-radius: 2px;box-shadow: 0 0 1px 1.5px #2E3444"></b></p>
+ <p style="color: #fff;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -8px;margin-left: 65px">72 Hours</p>
+ <p style="color: cyan;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -4px;margin-left: 65px">৳ 75<b style="margin-left: 100px">
+   <a href="" style="color: #0577E9;background-color: #0577E9;border-radius: 5px">
+     <b style="color: #fff;margin: 30px">
+       BUY
+     </b>
+   </a>
+ </b></p>
+</div>
+      </li><li class="splide__slide">
+			 
+			<div style="background-color: #1C2939;width: 90%;margin: 0 auto;border-radius: 10px;box-shadow: 0 0 1px 1.5px #2E3444;height: 95px"><br>
+  <p style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 900;margin-left: 20px;cursor: none;margin-top: -8px">🌐 <b style="color: #1C2939;">...</b>  30 GP + 512 MB Bonus
+    <b><img src="robi.png" style="width: 20px;margin-left: 50px;border-radius: 2px;box-shadow: 0 0 1px 1.5px #2E3444"></b></p>
+ <p style="color: #fff;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -8px;margin-left: 65px">72 Hours</p>
+ <p style="color: cyan;font-family: sans-serif;font-size: 14px;font-weight: 500;margin-top: -4px;margin-left: 65px">৳ 75<b style="margin-left: 100px">
+   <a href="" style="color: #0577E9;background-color: #0577E9;border-radius: 5px">
+     <b style="color: #fff;margin: 30px">
+       BUY
+     </b>
+   </a>
+ </b></p>
+</div>
+      </li>
+		</ul>
+  </div>
+</div>
+
+<br>
+<div style="background-color: #1C2939;height: 10px;width: 90%;margin: 0 auto;border-radius: 50px;margin-top: 4px">
+  
+</div>
+<br><br>
+
+
+<br><br>
+  <script>
+  
+  function changeLanguage(language) {
+  var element = document.getElementById("url");
+  element.value = language;
+  element.innerHTML = language;
+  }
+  
+  function showDropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+  var openDropdown = dropdowns[i];
+  if (openDropdown.classList.contains('show')) {
+  openDropdown.classList.remove('show');
+  }
+  }
+  }
+  }
+  
+  
+  
+  
+  
+  var splide = new Splide( '.splide', {
+  type   : 'loop',
+  padding: '0rem',
+} );
+splide.mount()
+ 
+
+      
+     
+     
+     
+     function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    
+    moreText.style.display = "inline";
+  }
+}
+
+
+
+
+  function myFunction1() {
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("myBtn1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    
+    moreText.style.display = "inline";
+  }
+} 
+      
+      
+
+</script>  
+ </body>
+</html>
